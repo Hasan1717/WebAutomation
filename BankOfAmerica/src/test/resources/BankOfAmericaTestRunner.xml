@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="JBO Automation Script " parallel="false">
+
+    <parameter name="useCloudEnv" value="flase"/>
+    <parameter name="cloudEnvName" value="browserstack"/>
+    <parameter name="os" value="OS X"/>
+    <parameter name="os_version" value="Sierra"/>
+    <parameter name="browserName" value="chrome"/>
+    <parameter name="browserVersion" value="53.0"/>
+    <parameter name="url" value="https://www.bankofamerica.com"/>
+
+    <test name = "BOA Search">
+        <classes>
+            <!--<class name="homePage.CardTest"/>-->
+            <!--<class name="homePage.refinanceLoans"/>-->
+            <!--<class name="homePage.invest"/>-->
+            <!--<class name="homePage.TechInvestors"/>-->
+            <!--<class name="homePage.allAboutBankOfAmericakOfAmerica"/>-->
+            <class name="searchTest.TestSearch"/>
+
+
+        </classes>
+    </test>
+</suite>
